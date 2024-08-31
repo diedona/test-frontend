@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Mod1Component } from './mod1.component';
+import { HelloMod1Component } from './pages/hello-mod1/hello-mod1.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: Mod1Component,
+    component: HelloMod1Component,
   },
   {
-    path: 'lease',
-    component: Mod1Component,
+    path: '**',
+    redirectTo: '',
   },
 ];
 
